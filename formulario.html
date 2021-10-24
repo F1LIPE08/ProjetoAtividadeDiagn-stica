@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="registroformulário"><h1>Formulário de Cadastro de Usuário</h1></div>
+    <div class="conteudo">
+        <form>
+            <div id="nome">
+                <h2 class="nome">Nome e Sobrenome:</h2>
+                <input class="primeironome" type="text" name="primeiro_nome" title="name" required autofocus placeholder="Insira seu nome">
+                <input class="sobrenome" type="text" name="sobre_nome" title="sobrenome" required autofocus placeholder="Insira seu sobrenome">
+            </div>
+                <h2 class="nome">E-mail:</h2>
+                <input class="email" type="email" name="email" title="email" placeholder="Insira seu e-mail" required>
+
+                <h2 class="nome">Telefone:</h2>
+                <input type="tel" class="codigo" id="tel" name="codigo_area" placeholder="(xx)xxxxx-xxxx" title="tel"  required pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}" />
+                <label class="codigo_area"></label>
+                <h2 class="nome">Sexo:</h2>
+                <select class="opções" name="assunto">
+                    <option disabled="disabled" selected="selected">Selecione a opção</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não responder</option>
+                </select>
+                <br><br>
+                <h2 id="idade">Idade:</h2>
+			        <label class="radio">
+                    <input class="radio-one" type="radio" name="radio" checked="checked" name="">
+                    <span class="checkmark"></span>
+                    Até 18 anos
+                    </label>
+                    <label class="radio">
+                    <input class="radio-two" type="radio" name="radio" checked="checked" name="">
+                    <span class="checkmark"></span>
+                    Entre 19 e 36 anos
+                    </label>
+                    <label class="radio">
+                    <input class="radio-three" type="radio" name="radio" checked="checked" name="">
+                    <span class="checkmark"></span>
+                    Acima de 37 anos
+                    </label>
+                    <br><Br>
+                <h2 class="nome">Data:</h2>
+                    <input type="date" class="nome" id="data" required pattern="\d{1,2}/\d{1,2}/\d{4}" />
+                    <br><br>
+                <h2 class="nome">De 1 a 5, o que você está achando da quarentena:</h2>
+                <br>
+                    <input type="range" class="nome" id="quarentena" min="1" max="5"></input>
+                    <br><br>
+                <h2 class="nome">Comentários:</h2>
+                <input type="textarea" id="comentarios" size="40" autofocus placeholder="Gostaria de dizer algo?" />
+                <br><br>
+                <input type="submit" value="Enviar" class="botao" id="botao1">
+			    <input type="reset" value="Resetar" class="botao" id="botao2">
+        </form>
+    </div>
+        <input id="menu-hamburguer" type="checkbox">
+
+        <label for="menu-hamburguer">
+        <div class="menu">
+            <span class="hamburguer"></span>
+        </div>
+        </label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="index.html">Desafios</a></li>
+                <li><a href="index.html">Acontecimentos</a></li>
+                <li><a href="index.html">Contato</a></li>
+            </ul>
+</body>
+</html>
